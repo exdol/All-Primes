@@ -17,7 +17,7 @@ for (int i = 2; i <= Math.sqrt(n); i++) {
 }
 ```
         
-#### Dividing a N by every previous prime smaller than it in the interval [2, √(N)] 
+#### Dividing a N by every previous *PRIMES* smaller than it in the interval [2, √(N)] 
 ``` 
 Using memoization to create an ArrayList of primes that we've recently discovered as primes, starting with 2, 3, and 5. If there are no divisors that lead to no remainders, then we can add n to that memoized list of primes
 ```
@@ -26,7 +26,7 @@ Using memoization to create an ArrayList of primes that we've recently discovere
 ``` 
 (input: an integer n > 1, output: all prime numbers from 2 through n)
 
- let A be an array of Boolean values, indexed by integers 2 to n,
+let A be an array of Boolean values, indexed by integers 2 to n,
 initially all set to true.
 
 for i = 2, 3, 4, ..., not exceeding √n do
