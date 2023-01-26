@@ -56,5 +56,5 @@ public void run(int threadNum) {
   }
 }
 ```
-
-    
+## Summary
+As I progressed through these approaches, I saw rapid decreases in runtime. One major roadblock was testing because printing slows the program down by quite a bit; for example, when my code could run for 9 seconds, printing every prime would make it take 500+ seconds. This made it difficult to see the work being done by each thread and that numbers were not being skipped. However, this was resolved by calculating the work/iterations done by each thread and printing them afterwards. With my most recent approach, the work done by each thread was roughly equal.    
